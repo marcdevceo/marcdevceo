@@ -15,13 +15,13 @@ export const projects: ProjectProps[] = [
     live: "https://code-coach-culture.vercel.app",
     github: "https://github.com/marcdevceo/code-coach-culture",
   },
-  {
-    name: "MoviFind",
-    description:
-      "Search and discover movies with trailer previews and ratings.",
-    tech: ["React", "TMDB API", "TailwindCSS"],
-    live: "https://movifind.vercel.app",
-    github: "https://github.com/marcdevceo/movifind",
-  },
+  // {
+  //   name: "MoviFind",
+  //   description:
+  //     "Search and discover movies with trailer previews and ratings.",
+  //   tech: ["React", "TMDB API", "TailwindCSS"],
+  //   live: "https://movifind.vercel.app",
+  //   github: "https://github.com/marcdevceo/movifind",
+  // },
   // Add more projects here
 ];
