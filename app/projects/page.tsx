@@ -15,7 +15,7 @@ export default function ProjectsPage() {
         to internal tools, I build with purpose and personality.
       </p>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 justify-center max-w-6xl mx-auto">
+      <div className="flex jusitfy-center gap-8 justify-center max-w-6xl mx-auto">
         {projects.map((project) => (
           <ProjectCard
             key={project.name}
