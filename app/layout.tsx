@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import NavLinks from "@/components/NavLinks";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -19,8 +20,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.className} bg-turf-green text-white`}
+        className={`${inter.className} bg-turf-green text-white m-5`}
       >
+        <NavLinks />
         <main className="max-w-4xl mx-auto px-4 py-8">{children}</main>
       </body>
     </html>
