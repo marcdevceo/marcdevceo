@@ -1,12 +1,10 @@
 import Hero from "@/components/Hero";
-import Tagline from "@/components/Tagline";
 import React from "react";
 
 export default function HomePage() {
   return( 
-    <main className="min-h-screen">
+    <main className="">
       <Hero />
-      <Tagline />
     </main>
   );
 }

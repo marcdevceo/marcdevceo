@@ -4,7 +4,7 @@ import { projects } from "@/data/projects";
 
 export default function ProjectsPage() {
   return (
-    <section className="max-w-6xl mx-auto mt-20 px-4">
+    <section className="max-w-6xl mx-auto my-16 px-4">
       <h1 className="text-4xl font-funky font-bold text-neon mb-6 text-center">
         Projects
       </h1>
