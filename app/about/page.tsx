@@ -41,12 +41,19 @@ export default function AboutPage() {
             believes music—especially the right playlist—can calm even the most
             savage coding beast.
           </p>
-          <div>
+          <div className="grid grid-cols-1 sm: grid-cols-2 text-sm text-center justify-center gap-4 mt-6">
             <a
               href="mailto:marcdevceo@gmail.com"
-              className="border p-2 bg-gold text-graphite shadow-xl  hover:text-zinc-400 transition"
+              className="flex items-center bg-gold text-graphite font-semibold px-6 py-3 rounded shadow-xl  hover:brightness-90 transition"
             >
-              Email Me
+              📧 Email Me
+            </a>
+            <a
+              href="/marcus_kimber_tech_resume.pdf"
+              download
+              className="flex items-center bg-neon text-black font-semibold px-6 py-3 rounded shadow-xl hover:brightness-90 transition"
+            >
+              📄 Download Resume
             </a>
           </div>
         </div>
