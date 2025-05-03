@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-'use client'
+"use client";
 
-import { motion } from 'framer-motion'
+import { motion } from "framer-motion";
 
 export default function HomePage() {
   return (
@@ -27,11 +27,13 @@ export default function HomePage() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.6, duration: 0.6 }}
       >
-        I build dope, user-focused web apps with modern stacks and clean vibes. Whether you’re a recruiter or a future client, take a look around—this is where engineering meets energy.
+        I build dope, user-focused web apps with modern stacks and clean vibes.
+        Whether you’re a recruiter or a future client, take a look around—this
+        is where engineering meets energy.
       </motion.p>
 
       <motion.div
-        className="flex justify-center gap-4 mt-6"
+        className="flex justify-center gap-5 mt-6"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.9, duration: 0.5 }}
@@ -48,13 +50,12 @@ export default function HomePage() {
         >
           About Me
         </a>
-        <a
-          href="mailto:marcdevceo@gmail.com"
-          className="text-sky underline hover:text-neon transition"
-        >
-          Email Me
-        </a>
+        <div className="flex items-center text-gold underline hover:text-neon transition">
+          <a href="mailto:marcdevceo@gmail.com" className="">
+            Email Me
+          </a>
+        </div>
       </motion.div>
     </motion.section>
-  )
+  );
 }

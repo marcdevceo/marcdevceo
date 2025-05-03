@@ -15,7 +15,7 @@ export default function NavLinks() {
 
   return (
     <nav className="mt-6">
-      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-2 gap-6 justify-center max-w-4xl mx-auto">
+      <div className="grid grid-cols-1 sm:grid-cols-3 md:grid-cols-3 gap-6 justify-center max-w-4xl mx-auto">
         {links.map(({ href, label }) => (
           <Link
             key={href}
