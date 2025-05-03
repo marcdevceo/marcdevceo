@@ -10,7 +10,7 @@ export default function Tagline() {
       animate={{ opacity: 1 }}
       transition={{ delay: 0.9, duration: 0.5 }}
     >
-      <blockquote className="text-lg text-center italic text-primetime mt-10">
+      <blockquote className="text-lg text-center italic text-primetime mt-8">
         “Faith, focus, and fresh code.”
       </blockquote>
     </motion.div>
