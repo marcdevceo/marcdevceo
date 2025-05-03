@@ -35,9 +35,9 @@ export default function AboutPage() {
             tools that feel intuitive and solving problems that actually matter.
           </p>
           <p>
-            I’m a firm believer in God, a diehard football fan (
-            <span className="font-semibold">#FlyEaglesFly</span> &{" "}
-            <span className="font-semibold">War Eagle</span>), and someone who
+            I’m a firm believer in God, a diehard football fan {" "} 
+            <span className="font-semibold">FlyEaglesFly</span> & {" "}
+            <span className="font-semibold">War Eagle</span>, and someone who
             believes music—especially the right playlist—can calm even the most
             savage coding beast.
           </p>
