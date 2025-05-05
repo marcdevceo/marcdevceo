@@ -7,7 +7,7 @@ export default function AboutPage() {
         About Me
       </h1>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 items-start">
         {/* Left side: personal brand or photo */}
         <div className="flex justify-center">
           {/* Optional: replace with real image later */}
