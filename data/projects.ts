@@ -23,4 +23,12 @@ export const projects: ProjectProps[] = [
     live: "https://movifind.vercel.app",
     github: "https://github.com/marcdevceo/movifind",
   },
+  {
+    name: "MELLC – Managed Enterprises LLC",
+    description:
+      "A leadership and customer experience coaching site for my business, showcasing my ability to combine professional branding with backend functionality using FastAPI and Supabase.",
+    tech: ["Next.js", "TailwindCSS", "FastAPI", "Supabase"],
+    live: "https://mellc-site.vercel.app",
+    github: "https://github.com/marcdevceo/mellc_site",
+  },
 ];
