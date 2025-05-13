@@ -7,6 +7,7 @@ import clsx from 'clsx'
 const links = [
   { href: '/', label: 'Home' },
   { href: '/projects', label: 'Projects' },
+  {href: '/case-studies', label: 'Case Studies'},
   { href: '/about', label: 'About Me' },
 ]
 
@@ -15,7 +16,7 @@ export default function NavLinks() {
 
   return (
     <nav className="m-5">
-      <div className="grid grid-cols-3 text-sm sm:text-lg gap-6 justify-center max-w-4xl mx-auto">
+      <div className="grid grid-cols-4 text-sm sm:text-lg gap-6 justify-center max-w-4xl mx-auto">
         {links.map(({ href, label }) => (
           <Link
             key={href}
