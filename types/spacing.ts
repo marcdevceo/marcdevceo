@@ -1,52 +1,26 @@
+import {
+  alignItemsClass,
+  bgColor,
+  flexDirection,
+  gapClass,
+  justifyContentClass,
+  marginClass,
+  paddingClass,
+  spacingX,
+} from "@/theme";
+
 export type SpacerProps = {
-  size?:
-    | "xs"
-    | "sm"
-    | "md"
-    | "lg"
-    | "xl"
-    | "xxl"
-    | "xxxl"
-    | "4xl"
-    | "5xl"
-    | "6xl";
+  size?: keyof typeof spacingX;
 };
 
 export type ContainerProps = {
   children: React.ReactNode;
-  flex?: "none" | "row" | "column";
-  justifyContent?:
-    | "left"
-    | "center"
-    | "right"
-    | "between"
-    | "around"
-    | "evenly";
-  alignItems?: "left" | "center" | "right" | "stretch";
-  margin?:
-    | "none"
-    | "xs"
-    | "sm"
-    | "md"
-    | "lg"
-    | "xl"
-    | "xxl"
-    | "xxxl"
-    | "4xl"
-    | "5xl"
-    | "6xl";
-  padding?:
-    | "none"
-    | "xs"
-    | "sm"
-    | "md"
-    | "lg"
-    | "xl"
-    | "xxl"
-    | "xxxl"
-    | "4xl"
-    | "5xl"
-    | "6xl";
-    gap?: "none" | "xs" | "sm" | "md" | "lg" | "xl" | "xxl" | "xxxl" | "4xl" | "5xl" | "6xl";
+  bgVarient?: keyof typeof bgColor;
+  flex?: keyof typeof flexDirection;
+  justifyContent?: keyof typeof justifyContentClass;
+  alignItems?: keyof typeof alignItemsClass;
+  margin?: keyof typeof marginClass;
+  padding?: keyof typeof paddingClass;
+  gap?: keyof typeof gapClass;
   className?: string;
 };

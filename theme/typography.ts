@@ -1,15 +1,25 @@
 export const fontSize = {
-  xs: 'text-xs',     // 0.75rem (12px)
-  sm: 'text-sm',     // 0.875rem (14px)
-  base: 'text-base', // 1rem (16px)
-  md: 'text-lg',     // 1.125rem (18px)
-  lg: 'text-xl',     // 1.25rem (20px)
-  xl: 'text-2xl',    // 1.5rem (24px)
-  xxl: 'text-3xl',   // 1.875rem (30px)
-  xxxl: 'text-4xl',  // 2.25rem (36px)
-  '4xl': 'text-5xl', // 3rem (48px)
-  '5xl': 'text-6xl', // 3.75rem (60px)
-  '6xl': 'text-7xl', // 4.5rem (72px)
+  // Semantic keys
+  title: 'text-2xl sm:text-3xl md:text-4xl lg:text-5xl',
+  subtitle: 'text-lg sm:text-xl md:text-2xl lg:text-3xl',
+  body: 'text-base sm:text-lg md:text-xl lg:text-2xl',
+  caption: 'text-xs sm:text-sm',
+  buttonText: 'text-sm sm:text-base md:text-lg',
+  overline: 'text-[10px] sm:text-xs tracking-widest uppercase',
+  display: 'text-4xl sm:text-5xl md:text-6xl',
+
+  // Utility fallback (for specific scaling needs)
+  xs: 'text-xs',
+  sm: 'text-sm',
+  base: 'text-base',
+  md: 'text-lg',
+  lg: 'text-xl',
+  xl: 'text-2xl',
+  xxl: 'text-3xl',
+  xxxl: 'text-4xl',
+  '4xl': 'text-5xl',
+  '5xl': 'text-6xl',
+  '6xl': 'text-7xl',
 };
 
 export const textAlign = {

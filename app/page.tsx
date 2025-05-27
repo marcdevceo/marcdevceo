@@ -1,10 +1,17 @@
-import { Text } from "@/components/ui/Typography";
-
+import AboutPrevious from "@/components/AboutPrevious";
+import FeaturedProjects from "@/components/FeaturedProjects";
+import HeroSection from "@/components/HeroSection";
+import { FlexContainer, Main } from "@/components/ui/Spacer";
+import {} from "@/components/ui/Typography";
 
 export default function Home() {
   return (
-    <div>
-      <Text>Welcome to MarcDevCEO</Text>
-    </div>
+    <Main>
+      <HeroSection />
+      <FlexContainer flex="primary" gap="xxl" margin="primary" alignItems="stretch">
+        <FeaturedProjects />
+        <AboutPrevious />
+      </FlexContainer>
+    </Main>
   );
 }

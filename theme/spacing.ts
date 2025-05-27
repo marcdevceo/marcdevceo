@@ -30,6 +30,7 @@ export const flexDirection = {
   none: 'flex-none',
   row: 'flex-row',
   column: 'flex-col',
+  primary: 'flex-col sm:flex-row',
 };
 
 export const justifyContentClass = {
@@ -74,6 +75,7 @@ export const marginClass = {
   '4xl': 'm-20',
   '5xl': 'm-24',
   '6xl': 'm-32',
+  "primary": 'm-10 sm:m-14 md:m-16 lg:m-20',
 };
 
 export const paddingClass = {
@@ -88,6 +90,7 @@ export const paddingClass = {
   '4xl': 'p-20',
   '5xl': 'p-24',
   '6xl': 'p-32',
+  "primary": 'p-4 sm:p-8 md:p-12 lg:p-16',
 };
 
 

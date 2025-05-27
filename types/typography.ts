@@ -1,22 +1,17 @@
-import { textColor } from "@/theme";
+import {
+  fontFamily,
+  fontSize,
+  fontWeight,
+  textAlign,
+  textColor,
+} from "@/theme";
 
 export type TextProps = {
   children: React.ReactNode;
-  align?: "left" | "center" | "right";
+  align?: keyof typeof textAlign;
   color?: keyof typeof textColor;
-  size?:
-    | "xs"
-    | "sm"
-    | "md"
-    | "lg"
-    | "xl"
-    | "xxl"
-    | "xxxl"
-    | "4xl"
-    | "5xl"
-    | "6xl";
-  weight?: "light" | "normal" | "medium" | "semibold" | "bold" | "extrabold";
-  font?: "heading" | "sans" | "mono";
+  size?: keyof typeof fontSize;
+  weight?: keyof typeof fontWeight;
+  font?: keyof typeof fontFamily;
   className?: string;
 };
-

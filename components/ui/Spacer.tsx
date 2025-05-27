@@ -7,6 +7,7 @@ import {
   paddingClass,
   spacingX,
   spacingY,
+  bgColor,
 } from "@/theme";
 import { ContainerProps, SpacerProps } from "@/types/spacing";
 
@@ -20,24 +21,26 @@ export function SpacerY({ size = "lg" }: SpacerProps) {
 export function Main({
   children,
   flex = "column",
-  margin = "md",
-  gap = "md",
-  padding = "sm",
+  bgVarient = "none",
+  margin = "none",
+  gap = "none",
+  padding = "none",
   justifyContent = "left",
   alignItems = "left",
   className = "",
 }: ContainerProps) {
   return (
-    <body
-      className={`flex min-h-screen ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${alignItemsClass[alignItems]} ${gapClass[gap]} ${marginClass[margin]} ${paddingClass[padding]} ${className}`}
+    <div
+      className={`${bgColor[bgVarient]} flex min-h-screen ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${alignItemsClass[alignItems]} ${gapClass[gap]} ${marginClass[margin]} ${paddingClass[padding]} ${className}`}
     >
       {children}
-    </body>
+    </div>
   );
 }
 
 export function FlexContainer({
   children,
+  bgVarient = "none",
   flex = "row",
   margin = "none",
   gap = "none",
@@ -48,7 +51,13 @@ export function FlexContainer({
 }: ContainerProps) {
   return (
     <div
-      className={`flex ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${alignItemsClass[alignItems]} ${gapClass[gap]} ${marginClass[margin]} ${paddingClass[padding]} ${className}`}
+      className={`flex ${bgColor[bgVarient]} ${
+        justifyContent === "left" ? "w-auto" : "w-full"
+      } ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${
+        alignItemsClass[alignItems]
+      } ${gapClass[gap]} ${marginClass[margin]} ${
+        paddingClass[padding]
+      } ${className}`}
     >
       {children}
     </div>

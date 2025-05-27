@@ -1,40 +1,27 @@
 import clsx from 'clsx';
 import { fontWeight, fontFamily, fontSize } from '@/theme/typography';
 import { paddingClass } from '@/theme/spacing';
-import { textColor, bgColor } from '@/theme/color';
-
-export type ButtonProps = {
-  children: React.ReactNode;
-  size?: 'sm' | 'md' | 'lg';
-  variant?: 'primary' | 'secondary' | 'ghost';
-  loading?: boolean;
-  disabled?: boolean;
-  className?: string;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+import { variantClasses } from '@/theme/color';
+import { ButtonProps } from '@/types/components';
 
 export default function Button({
   children,
-  size = 'md',
-  variant = 'primary',
+  size = "buttonText",
+  padding = "md",
+  variant = "primary",
   loading = false,
   disabled = false,
-  className = '',
+  className = "",
   ...rest
 }: ButtonProps) {
   const baseStyles = clsx(
-    'inline-flex items-center justify-center rounded-md transition duration-150 ease-in-out',
-    paddingClass[size],
+    'inline-flex items-center justify-center rounded-lg transition duration-150 ease-in-out',
+    paddingClass[padding],
     fontSize[size],
     fontFamily.sans,
     fontWeight.medium,
     className
   );
-
-  const variantClasses = {
-    primary: `${bgColor.primary} ${textColor.neutral} hover:bg-primary/90`,
-    secondary: `${bgColor.secondary} ${textColor.neutral} hover:bg-secondary/90`,
-    ghost: `bg-transparent ${textColor.primary} hover:bg-gray-100`,
-  };
 
   return (
     <button
