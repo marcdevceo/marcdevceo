@@ -1,0 +1,58 @@
+import { TextProps } from "@/types/typography";
+import { textColor } from "@/theme";
+import { fontFamily, fontSize, fontWeight, textAlign } from "@/theme/typography";
+
+
+
+export default function Title({
+  children,
+  align = 'center',
+  color = 'primary',  
+  size = 'xxxl',
+  weight = 'bold',
+  font = 'heading',
+  className = '',
+}: TextProps) {
+ 
+
+  return (
+    <h1 className={`${align === 'left' ? 'w-auto' : 'w-full'}  ${fontSize[size]} ${fontFamily[font]} ${fontWeight[weight]} ${textColor[color]} ${textAlign[align]} ${className}`}>
+      {children}
+    </h1>
+  );
+}
+
+export function Subtitle({
+  children,
+  align = 'left',
+  color = 'secondary',
+  size = 'xl',
+  weight = 'semibold',
+  font = 'heading',
+  className = '',
+}: TextProps) {
+  return (
+    <h2 className={`${align === 'left' ? 'w-auto' : 'w-full'} ${fontSize[size]} ${fontFamily[font]} ${fontWeight[weight]} ${textColor[color]} ${textAlign[align]} ${className}`}>
+      {children}
+    </h2>
+  );
+}
+
+export function Text({
+  children,
+  align = 'left',
+  color = 'neutral',
+  size = 'md',
+  weight = 'normal',
+  font = 'sans',
+  className = '',
+}: TextProps) { 
+  return (
+    <p className={`${fontSize[size]} ${fontWeight[weight]} ${fontFamily[font]} ${textColor[color]} ${textAlign[align]} ${className}`}>
+      {children}
+    </p>
+  );
+}
+
+
+
