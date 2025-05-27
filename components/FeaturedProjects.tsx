@@ -6,14 +6,14 @@ import Image from "next/image";
 
 export default function FeaturedProjects() {
   return (
-    <FlexContainer flex="column" justifyContent="center" className="flex-1">
+    <FlexContainer flex="column" className="flex-1">
       <Link
         href="https://movifind.vercel.app"
         target="_blank"
         rel="noopener noreferrer"
-        className="h-full"
+        className="h-full w-full"
       >
-        <Card className="h-full flex flex-col ">
+        <Card>
             <Subtitle align="center">Featured Project</Subtitle>
             <Text align="center" weight="bold">
               Click to Visit!
@@ -22,7 +22,7 @@ export default function FeaturedProjects() {
             <Image
               src="/movifind.png"
               alt="MoviFind Image"
-              width={400}
+              width={500}
               height={300}
               className="rounded-lg w-full h-auto object-cover"
             />

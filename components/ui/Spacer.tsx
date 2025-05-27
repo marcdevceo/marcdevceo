@@ -51,9 +51,8 @@ export function FlexContainer({
 }: ContainerProps) {
   return (
     <div
-      className={`flex ${bgColor[bgVarient]} ${
-        justifyContent === "left" ? "w-auto" : "w-full"
-      } ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${
+      className={`flex ${bgColor[bgVarient]}
+       ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${
         alignItemsClass[alignItems]
       } ${gapClass[gap]} ${marginClass[margin]} ${
         paddingClass[padding]

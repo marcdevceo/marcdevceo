@@ -14,7 +14,7 @@ export default function Card({
 }: CardProps) {
   return (
     <div
-      className={clsx(
+      className={clsx('h-full flex-col',
         paddingClass[padding],
         bgColor[background],
         rounded && 'rounded-lg',
