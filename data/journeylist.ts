@@ -1,0 +1,16 @@
+export const journeyList = [
+  "Worked as Customer Service Rep, Senior Advisor, QA Analyst, Team Lead, and Team Manager",
+  "Mastered communication, empathy, and user-first thinking",
+  "Led teams, delivered coaching, and tracked KPIs with custom dashboards",
+  "Gained strong operational insight from the frontlines of support",
+  "Returned to coding after originally studying Software Engineering at Auburn",
+  "Built projects using Django, FastAPI, and Python",
+  "Launched business-aligned tools for Managed Enterprises LLC",
+  "Started solving real-world problems with web applications",
+  "Built custom UI Component Framework for styling consistency",
+  "Created Backend Blueprint to streamline architecture across projects",
+  "Deployed full apps with real CI/CD pipelines",
+  "Learned responsive UI, semantic design, and API integration",
+  "Combining design, development, and product thinking into every build",
+  "Started mentoring and building repeatable design/dev systems",
+];

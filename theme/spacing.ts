@@ -30,7 +30,8 @@ export const flexDirection = {
   none: 'flex-none',
   row: 'flex-row',
   column: 'flex-col',
-  primary: 'flex-col sm:flex-row',
+  wrap: 'flex-wrap',
+  primary: 'flex-col sm:flex-row sm:flex-wrap',
 };
 
 export const justifyContentClass = {

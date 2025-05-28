@@ -15,3 +15,8 @@ export type TextProps = {
   font?: keyof typeof fontFamily;
   className?: string;
 };
+
+export type ListsProps<T> = {
+  lists: T[];
+  renderItem: (item: T, index: number) => React.ReactNode;
+};

@@ -20,6 +20,8 @@ export type ContainerProps = {
   justifyContent?: keyof typeof justifyContentClass;
   alignItems?: keyof typeof alignItemsClass;
   margin?: keyof typeof marginClass;
+  width?: string;
+  centered?: boolean;
   padding?: keyof typeof paddingClass;
   gap?: keyof typeof gapClass;
   className?: string;

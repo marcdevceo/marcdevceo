@@ -1,17 +1,17 @@
 import Link from "next/link";
 import Card from "@/components/ui/Card";
-import {  FlexContainer, SpacerY } from "@/components/ui/Spacer";
+import {  SpacerY } from "@/components/ui/Spacer";
 import { Subtitle, Text } from "@/components/ui/Typography";
 import Image from "next/image";
 
 export default function FeaturedProjects() {
   return (
-    <FlexContainer flex="column" className="flex-1">
+    // <FlexContainer flex="column" className="flex-1">
       <Link
         href="https://movifind.vercel.app"
         target="_blank"
         rel="noopener noreferrer"
-        className="h-full w-full"
+        className="flex-1"
       >
         <Card>
             <Subtitle align="center">Featured Project</Subtitle>
@@ -22,12 +22,12 @@ export default function FeaturedProjects() {
             <Image
               src="/movifind.png"
               alt="MoviFind Image"
-              width={500}
+              width={400}
               height={300}
               className="rounded-lg w-full h-auto object-cover"
             />
         </Card>
       </Link>
-    </FlexContainer>
+    // </FlexContainer>
   );
 }

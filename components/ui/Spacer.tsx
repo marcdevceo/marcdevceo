@@ -10,6 +10,7 @@ import {
   bgColor,
 } from "@/theme";
 import { ContainerProps, SpacerProps } from "@/types/spacing";
+import clsx from "clsx";
 
 export default function SpacerX({ size = "lg" }: SpacerProps) {
   return <div className={`${spacingX[size]}`} />;
@@ -22,16 +23,30 @@ export function Main({
   children,
   flex = "column",
   bgVarient = "none",
-  margin = "none",
+  margin = "primary",
   gap = "none",
   padding = "none",
   justifyContent = "left",
   alignItems = "left",
+  width = "",
+  centered = false,
   className = "",
 }: ContainerProps) {
   return (
     <div
-      className={`${bgColor[bgVarient]} flex min-h-screen ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${alignItemsClass[alignItems]} ${gapClass[gap]} ${marginClass[margin]} ${paddingClass[padding]} ${className}`}
+      className={clsx(
+        bgColor[bgVarient],
+        "flex min-h-screen",
+        flexDirection[flex],
+        justifyContentClass[justifyContent],
+        alignItemsClass[alignItems],
+        gapClass[gap],
+        marginClass[margin],
+        paddingClass[padding],
+        width,
+        centered && "mx-auto",
+        className
+      )}
     >
       {children}
     </div>
@@ -47,16 +62,25 @@ export function FlexContainer({
   padding = "none",
   justifyContent = "left",
   alignItems = "left",
+  width = "",
+  centered = false,
   className = "",
 }: ContainerProps) {
   return (
     <div
-      className={`flex ${bgColor[bgVarient]}
-       ${flexDirection[flex]} ${justifyContentClass[justifyContent]} ${
-        alignItemsClass[alignItems]
-      } ${gapClass[gap]} ${marginClass[margin]} ${
-        paddingClass[padding]
-      } ${className}`}
+      className={clsx(
+        "flex",
+        bgColor[bgVarient],
+        flexDirection[flex],
+        justifyContentClass[justifyContent],
+        alignItemsClass[alignItems],
+        gapClass[gap],
+        marginClass[margin],
+        paddingClass[padding],
+        width,
+        centered && "mx-auto",
+        className
+      )}
     >
       {children}
     </div>
@@ -68,10 +92,18 @@ export function Container({
   margin = "none",
   padding = "none",
   className = "",
+  width = "w-full",
+  centered = false,
 }: ContainerProps) {
   return (
     <div
-      className={`${marginClass[margin]} ${paddingClass[padding]} ${className}`}
+      className={clsx(
+        marginClass[margin],
+        paddingClass[padding],
+        width,
+        centered && "mx-auto",
+        className
+      )}
     >
       {children}
     </div>

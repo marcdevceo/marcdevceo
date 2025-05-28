@@ -6,7 +6,7 @@ import Title, { Text } from "@/components/ui/Typography";
 
 export default function HeroSection() {
   return (
-    <FlexContainer bgVarient="accent" flex="column" margin="primary" padding="primary">
+    <FlexContainer bgVarient="accent" flex="column" padding="primary">
       <Title>Welcome to MarcDevCEO Portfolio</Title>
       <Container padding="primary">
         <Text

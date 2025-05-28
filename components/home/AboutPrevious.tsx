@@ -1,14 +1,13 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
 import Card from "@/components/ui/Card";
-import { FlexContainer, SpacerY } from "@/components/ui/Spacer";
+import {  SpacerY } from "@/components/ui/Spacer";
 import { Subtitle, Text } from "@/components/ui/Typography";
 
 export default function AboutPrevious() {
   return (
-    <FlexContainer className="flex-1">
-      <Link href={"/about"} className="h-full w-full ">
-        <Card className="justify-center">
+      <Link href={"/about-me"} className="flex-1">
+        <Card className="justify-center w-full h-auto">
             <Subtitle align="center">About Me Preview</Subtitle>
             <Text align="center" weight="bold">
               Click to Learn More!
@@ -28,6 +27,5 @@ export default function AboutPrevious() {
             </Text>
         </Card>
       </Link>
-    </FlexContainer>
   );
 }

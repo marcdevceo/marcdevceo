@@ -1,4 +1,4 @@
-import { TextProps } from "@/types/typography";
+import { ListsProps, TextProps } from "@/types/typography";
 import { textColor } from "@/theme";
 import {
   fontFamily,
@@ -62,9 +62,17 @@ export function Text({
 }: TextProps) {
   return (
     <p
-      className={`${fontSize[size]} ${fontWeight[weight]} ${fontFamily[font]} ${textColor[color]} ${textAlign[align]} ${className}`}
+      className={`w-full ${fontSize[size]} ${fontWeight[weight]} ${fontFamily[font]} ${textColor[color]} ${textAlign[align]} ${className}`}
     >
       {children}
     </p>
+  );
+}
+
+export function List<T>({ lists, renderItem }: ListsProps<T>) {
+  return (
+    <ul className="list-disc pl-6">
+      {lists.map((item, index) => renderItem(item, index))}
+    </ul>
   );
 }
