@@ -1,6 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
 import Title, { List, Subtitle, Text } from "@/components/ui/Typography";
-import { Container, SpacerY } from "@/components/ui/Spacer";
+import { Container, FlexContainer, SpacerY } from "@/components/ui/Spacer";
 import Card from "@/components/ui/Card";
 import { journeyList } from "@/data/journeylist";
 
@@ -16,17 +16,19 @@ export default function HeroSection() {
         </Text>
       </Container>
       <SpacerY size="xxl" />
-      <Subtitle align="center">My Journey</Subtitle>
-      <SpacerY />
-      <Card>
-        <SpacerY size="md" />
-        <List
-          lists={journeyList}
-          renderItem={(item) => {
-            return <li key={item}>{item}</li>;
-          }}
-        />
-      </Card>
+      <FlexContainer flex="column" alignItems="center" width="w-full">
+        <Subtitle align="center">My Journey</Subtitle>
+        <SpacerY />
+        <Card>
+          <SpacerY size="md" />
+          <List
+            lists={journeyList}
+            renderItem={(item) => {
+              return <li key={item}>{item}</li>;
+            }}
+          />
+        </Card>
+      </FlexContainer>
     </>
   );
 }
