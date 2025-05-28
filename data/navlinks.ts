@@ -9,8 +9,8 @@ export const navLinks = [
     href: "/",
   },
   {
-    label: "About",
-    href: "/about",
+    label: "About Me",
+    href: "/about-me",
   },
   {
     label: "Projects",
