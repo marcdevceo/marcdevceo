@@ -1,8 +1,8 @@
 /* eslint-disable react/no-unescaped-entities */
 import Link from "next/link";
-import Button from "./ui/Button";
-import { Container, FlexContainer } from "./ui/Spacer";
-import Title, { Text } from "./ui/Typography";
+import Button from "@/components/ui/Button";
+import { Container, FlexContainer } from "@/components/ui/Spacer";
+import Title, { Text } from "@/components/ui/Typography";
 
 export default function HeroSection() {
   return (

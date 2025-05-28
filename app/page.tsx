@@ -1,6 +1,6 @@
-import AboutPrevious from "@/components/AboutPrevious";
-import FeaturedProjects from "@/components/FeaturedProjects";
-import HeroSection from "@/components/HeroSection";
+import AboutPrevious from "@/components/home/AboutPrevious";
+import FeaturedProjects from "@/components/home/FeaturedProjects";
+import HeroSection from "@/components/home/HeroSection";
 import { FlexContainer, Main } from "@/components/ui/Spacer";
 import {} from "@/components/ui/Typography";
 

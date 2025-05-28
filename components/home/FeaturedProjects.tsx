@@ -1,7 +1,7 @@
 import Link from "next/link";
-import Card from "./ui/Card";
-import {  FlexContainer, SpacerY } from "./ui/Spacer";
-import { Subtitle, Text } from "./ui/Typography";
+import Card from "@/components/ui/Card";
+import {  FlexContainer, SpacerY } from "@/components/ui/Spacer";
+import { Subtitle, Text } from "@/components/ui/Typography";
 import Image from "next/image";
 
 export default function FeaturedProjects() {
