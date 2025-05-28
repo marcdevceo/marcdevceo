@@ -8,6 +8,7 @@ export default function ContactHero() {
         <Title>Contact Me</Title>
         <SpacerY size="md" />
         <Text>
+          Clients & Recruiters welcome! <br />
           Let’s build something meaningful together. Whether you’re hiring for
           your team or launching your next idea, I bring full-stack execution
           with a product mindset. Reach out — I’m ready when you are.

@@ -6,17 +6,17 @@ export type ContactListProps = {
 
 export const contactlist = [
   {
-    name: "LinkedIn Profile",
+    name: "Connent with me on LinkedIn",
     href: "https://www.linkedin.com/in/marcus-k-a6800995/",
     link: "linkedin.com/in/marcus-k-a6800995/",
   },
   {
-    name: "Github Profile",
+    name: "View my Github projects",
     href: "https://github.com/marcdevceo",
     link: "github.com/marcdevceo",
   },
   {
-    name: "TikTok",
+    name: "New to TikTok - Serving Dev Content",
     href: "https://tiktok.com/@marcdevceo",
     link: "@marcdevceo",
   },
