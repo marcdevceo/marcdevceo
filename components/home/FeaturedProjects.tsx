@@ -6,7 +6,6 @@ import Image from "next/image";
 
 export default function FeaturedProjects() {
   return (
-    // <FlexContainer flex="column" className="flex-1">
       <Link
         href="https://movifind.vercel.app"
         target="_blank"
@@ -28,6 +27,5 @@ export default function FeaturedProjects() {
             />
         </Card>
       </Link>
-    // </FlexContainer>
   );
 }

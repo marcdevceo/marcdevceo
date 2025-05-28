@@ -12,8 +12,12 @@ import {
 import { ContainerProps, SpacerProps } from "@/types/spacing";
 import clsx from "clsx";
 
-export default function SpacerX({ size = "lg" }: SpacerProps) {
-  return <div className={`${spacingX[size]}`} />;
+export default function SpacerX({
+  size = "sm",
+  children,
+  className = "",
+}: SpacerProps) {
+  return <span className={clsx(spacingX[size], className)}>{children} </span>;
 }
 export function SpacerY({ size = "lg" }: SpacerProps) {
   return <div className={`${spacingY[size]}`} />;

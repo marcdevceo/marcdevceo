@@ -10,7 +10,9 @@ import {
 } from "@/theme";
 
 export type SpacerProps = {
+  children?: React.ReactNode;
   size?: keyof typeof spacingX;
+  className?: string;
 };
 
 export type ContainerProps = {

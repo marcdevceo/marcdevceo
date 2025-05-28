@@ -1,15 +1,15 @@
 export const spacingX = {
-  none: 'w-0 h-full', // 0rem    → 0px
-  xs: 'w-1 h-full', // 0.25rem → 4px
-  sm: 'w-2 h-full', // 0.5rem  → 8px
-  md: 'w-4 h-full', // 1rem    → 16px
-  lg: 'w-6 h-full', // 1.5rem  → 24px
-  xl: 'w-8 h-full', // 2rem    → 32px
-  xxl: 'w-12 h-full', // 3rem   → 48px
-  xxxl: 'w-16 h-full', // 4rem   → 64px
-  '4xl': 'w-20 h-full', // 5rem   → 80px
-  '5xl': 'w-24 h-full', // 6rem   → 96px
-  '6xl': 'w-32 h-full', // 8rem   → 128px
+  none: 'mx-1', // 0rem    → 0px
+  xs: 'mx-2', // 0.25rem → 4px
+  sm: 'mx-4', // 0.5rem  → 8px
+  md: 'mx-6', // 1rem    → 16px
+  lg: 'mx-8', // 1.5rem  → 24px
+  xl: 'mx-10', // 2rem    → 32px
+  xxl: 'mx-12', // 3rem   → 48px
+  xxxl: 'mx-16', // 4rem   → 64px
+  '4xl': 'mx-20', // 5rem   → 80px
+  '5xl': 'mx-24', // 6rem   → 96px
+  '6xl': 'mx-28', // 8rem   → 128px
 };
 
 export const spacingY = {

@@ -53,7 +53,7 @@ export default function NavBar({
           ) : null}
         </div>
 
-        {/* Besktop Links */}
+        {/* Desktop Links */}
         <div className="hidden md:flex justify-center w-full sm:w-auto gap-4 sm:gap-6">
           {links.map((link) => {
             const isActive = pathname === link.href;
