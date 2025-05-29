@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import Title, { Text } from "@/components/ui/Typography";
 import { FlexContainer } from "../ui/Spacer";
 
