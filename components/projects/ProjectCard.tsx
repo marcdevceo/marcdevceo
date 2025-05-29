@@ -15,7 +15,7 @@ export default function ProjectCard() {
             <Container className="flex justify-center">
               <Image
                 src={project.img}
-                alt="image of MoviFind App"
+                alt={`${project.title} screenshot`}
                 width={300}
                 height={200}
                 className="object-cover h-[200px] overflow-hidden"
