@@ -2,7 +2,6 @@
 import Title, { Text } from "@/components/ui/Typography";
 import { FlexContainer } from "@/components/ui/Spacer";
 import Button from "@/components/ui/Button";
-import Link from "next/link";
 
 export default function ProjectHero() {
   return (
@@ -18,9 +17,9 @@ export default function ProjectHero() {
         experiences.
       </Text>
       <FlexContainer justifyContent="center" width="w-full">
-        <Link href={"/contact"}>
-          <Button className="px-16">Let's Connect</Button>
-        </Link>
+        <Button href="/contact" className="px-24">
+          Let's Connect
+        </Button>
       </FlexContainer>
     </FlexContainer>
   );

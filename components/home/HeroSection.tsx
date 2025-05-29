@@ -1,5 +1,4 @@
 /* eslint-disable react/no-unescaped-entities */
-import Link from "next/link";
 import Button from "@/components/ui/Button";
 import { Container, FlexContainer } from "@/components/ui/Spacer";
 import Title, { Text } from "@/components/ui/Typography";
@@ -22,10 +21,10 @@ export default function HeroSection() {
           products people actually love to use.
         </Text>
       </Container>
-      <FlexContainer padding="md" justifyContent="center" className="w-full" >
-        <Link href="/contact-me" passHref>
-          <Button variant="secondary">Let's Get Started!</Button>
-        </Link>
+      <FlexContainer padding="md" justifyContent="center" className="w-full">
+        <Button href="/contact-me" variant="secondary">
+          Let's Get Started!
+        </Button>
       </FlexContainer>
     </FlexContainer>
   );

@@ -1,21 +1,23 @@
-import clsx from 'clsx';
-import { fontWeight, fontFamily, fontSize } from '@/theme/typography';
-import { paddingClass } from '@/theme/spacing';
-import { variantClasses } from '@/theme/color';
-import { ButtonProps } from '@/types/components';
+import clsx from "clsx";
+import { fontWeight, fontFamily, fontSize } from "@/theme/typography";
+import { paddingClass } from "@/theme/spacing";
+import { variantClasses } from "@/theme/color";
+import { ButtonProps } from "@/types/components";
+import Link from "next/link";
 
 export default function Button({
   children,
+  href,
+  target = "_self",
   size = "buttonText",
   padding = "md",
   variant = "primary",
-  loading = false,
-  disabled = false,
+  onClick,
   className = "",
   ...rest
 }: ButtonProps) {
   const baseStyles = clsx(
-    'inline-flex items-center justify-center rounded-lg transition duration-150 ease-in-out',
+    "inline-flex items-center justify-center rounded-lg transition duration-150 ease-in-out",
     paddingClass[padding],
     fontSize[size],
     fontFamily.sans,
@@ -23,17 +25,38 @@ export default function Button({
     className
   );
 
+  if (href && (href.startsWith("http") || href.startsWith("mailto:"))) {
+    return (
+      <a
+        href={href}
+        target={target}
+        className={clsx(baseStyles, variantClasses[variant])}
+        {...rest}
+      >
+        {children}
+      </a>
+    );
+  }
+
+  if (href) {
+    return (
+    <Link href={href} passHref className={clsx(baseStyles, variantClasses[variant])}
+        {...rest}>
+          {children}
+    </Link>
+    );
+  }
+
   return (
     <button
+      onClick={onClick}
       className={clsx(
         baseStyles,
         variantClasses[variant],
-        disabled && 'opacity-50 cursor-not-allowed'
       )}
-      disabled={disabled || loading}
       {...rest}
     >
-      {loading ? 'Loading...' : children}
+      {children}
     </button>
   );
 }

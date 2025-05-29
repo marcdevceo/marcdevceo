@@ -34,10 +34,13 @@ export type CardProps = {
 
 export type ButtonProps = {
   children: React.ReactNode;
+  onClick?: () => void;
+  href?: string;
+  target?: string;
   size?: keyof typeof fontSize;
   padding?: keyof typeof paddingClass;
   variant?: keyof typeof variantClasses;
   loading?: boolean;
   disabled?: boolean;
   className?: string;
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+} & React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement>;
