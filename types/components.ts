@@ -37,6 +37,7 @@ export type ButtonProps = {
   onClick?: () => void;
   href?: string;
   target?: string;
+  type?: "button" | "submit" | "reset";
   size?: keyof typeof fontSize;
   padding?: keyof typeof paddingClass;
   variant?: keyof typeof variantClasses;

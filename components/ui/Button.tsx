@@ -13,6 +13,7 @@ export default function Button({
   padding = "md",
   variant = "primary",
   onClick,
+  type = "button",
   className = "",
   ...rest
 }: ButtonProps) {
@@ -40,20 +41,21 @@ export default function Button({
 
   if (href) {
     return (
-    <Link href={href} passHref className={clsx(baseStyles, variantClasses[variant])}
-        {...rest}>
-          {children}
-    </Link>
+      <Link
+        href={href}
+        className={clsx(baseStyles, variantClasses[variant])}
+        {...rest}
+      >
+        {children}
+      </Link>
     );
   }
 
   return (
     <button
+      type={type}
       onClick={onClick}
-      className={clsx(
-        baseStyles,
-        variantClasses[variant],
-      )}
+      className={clsx(baseStyles, variantClasses[variant])}
       {...rest}
     >
       {children}
