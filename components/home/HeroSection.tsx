@@ -13,7 +13,7 @@ export default function HeroSection() {
           color="neutral"
           font="sans"
           weight="medium"
-          size="body"
+          size="buttonText"
         >
           I’m a Full-Stack Product Developer who builds with purpose. I bridge
           the gap between user pain points and elegant solutions. My experience
