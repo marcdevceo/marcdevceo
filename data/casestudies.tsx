@@ -11,6 +11,23 @@ export type CaseStudiesType = {
 
 export const caseStudiesList: CaseStudiesType[] = [
   {
+    title: "UI Framework",
+    slug: "ui-framework-case ",
+    href: "/case-studies/ui-framework-case",
+    summary: (
+      <>
+        <Text size="caption">
+          MELLC UI Framework is a custom-built design system crafted to bring
+          React Native–style structure and consistency into my web development
+          workflow. By combining Tailwind CSS with reusable components and
+          semantic design tokens, I created a system that’s flexible,
+          brand-ready, and responsive by default.{" "}
+        </Text>
+      </>
+    ),
+    img: [],
+  },
+  {
     title: "MarcDevCEO Portfolio",
     slug: "marcdevceo-portfolio",
     href: "/case-studies/marcdevceo-portfolio-case",
