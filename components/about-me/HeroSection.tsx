@@ -10,7 +10,7 @@ export default function HeroSection() {
       <Container>
         <Title>Who I am & Why I Build</Title>
         <SpacerY />
-        <Text align="center" className="italic">
+        <Text align="center" size="buttonText" className="italic">
           "From the call center to code -- I build with empathy, strategy, and
           execution."
         </Text>

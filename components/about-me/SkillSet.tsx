@@ -22,7 +22,7 @@ export default function SkillSet() {
   return (
     <>
       <Subtitle align="center">Technical Skillsets</Subtitle>
-      <Text align="center">Click each for more details:</Text>
+      <Text align="center" size="buttonText">Click each for more details:</Text>
       <SpacerY size="xl" />
       <FlexContainer
         justifyContent="center"

@@ -17,6 +17,7 @@ export type TextProps = {
 };
 
 export type ListsProps<T> = {
+  color?: keyof typeof textColor;
   lists: T[];
   renderItem: (item: T, index: number) => React.ReactNode;
 };

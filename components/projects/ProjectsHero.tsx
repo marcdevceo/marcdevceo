@@ -7,7 +7,7 @@ export default function ProjectHero() {
   return (
     <FlexContainer flex="column" gap="lg">
       <Title>Projects Page</Title>
-      <Text>
+      <Text size="buttonText">
         This page is a curated showcase of the work I’ve built from the ground
         up — spanning UI/UX, backend logic, and full product delivery. Each
         project reflects my process: from understanding real-world needs to

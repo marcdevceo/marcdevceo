@@ -6,6 +6,7 @@ import {
   fontWeight,
   textAlign,
 } from "@/theme/typography";
+import clsx from "clsx";
 
 export default function Title({
   children,
@@ -69,9 +70,9 @@ export function Text({
   );
 }
 
-export function List<T>({ lists, renderItem }: ListsProps<T>) {
+export function List<T>({ color="neutral", lists, renderItem}: ListsProps<T>) {
   return (
-    <ul className="list-disc pl-6">
+    <ul className={clsx("list-disc pl-6", textColor[color])}>
       {lists.map((item, index) => renderItem(item, index))}
     </ul>
   );

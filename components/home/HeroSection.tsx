@@ -22,7 +22,7 @@ export default function HeroSection() {
         </Text>
       </Container>
       <FlexContainer padding="md" justifyContent="center" className="w-full">
-        <Button href="/contact-me" variant="secondary">
+        <Button href="/contact-me">
           Let's Get Started!
         </Button>
       </FlexContainer>

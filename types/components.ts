@@ -40,7 +40,5 @@ export type ButtonProps = {
   size?: keyof typeof fontSize;
   padding?: keyof typeof paddingClass;
   variant?: keyof typeof variantClasses;
-  loading?: boolean;
-  disabled?: boolean;
   className?: string;
 } & React.HTMLAttributes<HTMLButtonElement | HTMLAnchorElement>;

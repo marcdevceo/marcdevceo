@@ -7,7 +7,7 @@ export default function ContactHero() {
       <Container>
         <Title>Contact Me</Title>
         <SpacerY size="md" />
-        <Text>
+        <Text size="buttonText">
           <span className="italic font-bold">Clients & Recruiters welcome!</span> <br />
           Let’s build something meaningful together. Whether you’re hiring for
           your team or launching your next idea, I bring full-stack execution

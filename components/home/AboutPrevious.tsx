@@ -13,7 +13,7 @@ export default function AboutPrevious() {
               Click to Learn More!
             </Text>
           <SpacerY size="xxl" />
-            <Text>
+            <Text size="buttonText">
               I’m Marcus Kimber — a Full-Stack Product Developer with a foundation
               built on 20+ years in customer service and 10+ years in leadership.
               Before I ever wrote a line of code, I was solving real problems for
