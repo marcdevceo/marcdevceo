@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import { Main } from "@/components/ui/Spacer";
+import Button from "@/components/ui/Button";
+import { FlexContainer, Main } from "@/components/ui/Spacer";
 import Title, { Subtitle, Text } from "@/components/ui/Typography";
 
 export default function MoviFindCase() {
@@ -146,6 +147,9 @@ export default function MoviFindCase() {
           replacing deep thinking.
         </li>
       </ul>
+      <FlexContainer justifyContent="center" width="w-full">
+        <Button href="/case-studies">Back to Case Studies</Button>
+      </FlexContainer>
     </Main>
   );
 }

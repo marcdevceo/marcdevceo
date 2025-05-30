@@ -1,142 +1,129 @@
-/* eslint-disable react/no-unescaped-entities */
-import { Main } from "@/components/ui/Spacer";
+import Button from "@/components/ui/Button";
+import { FlexContainer, Main } from "@/components/ui/Spacer";
 import Title, { Subtitle, Text } from "@/components/ui/Typography";
 
 export default function CodeCoachCultureCase() {
   return (
     <Main gap="md">
-        <a href="/case-studies"> 
-            <Text size="sm" color="secondary">← Back to Case Studies</Text>
-        </a><br/>
-      <Title>Code.Coach.Culture: Case Study</Title>
-      <Text>
-        Project: Code.Coach.Culture — A Blog Platform for Developers and Leaders
-      </Text>
+      <a href="/case-studies">
+        <Text size="sm" color="secondary">
+          ← Back to Case Studies
+        </Text>
+      </a>
+      <br />
+
+      <Title>📚 Code.Coach.Culture: Case Study</Title>
       <Text>
         Live Site:{" "}
-        <span className="italic font-semibold">
+        <span>
           <a href="https://code-coach-culture.vercel.app">
-            code-coach-culture.vercel.app
+            https://code-coach-culture.vercel.app
           </a>
         </span>
       </Text>
-      <Text>Stack: Next.js 14, MDX, Tailwind CSS, Framer Motion, Vercel</Text>
-      <hr className="w-full border-t border-gray-600 my-6" />
-      <Subtitle>🎯 The Concept</Subtitle>
-      <Text size="buttonText">
-        For years, I dreamed of starting a blog—but I didn’t just want to write
-        posts. I wanted to create a platform that reflected my identity: part
-        software developer, part leadership coach, and fully committed to
-        excellence in people and systems.
-      </Text>
-      <Text size="buttonText">
-        As someone with over 20 years of customer service experience and more
-        than a decade in leadership, I’ve spent my career developing people,
-        managing operations, and driving performance. When I transitioned into
-        software development, I initially felt like I had to leave that part of
-        myself behind. But the deeper I got into coding, the more I realized
-        those experiences gave me a powerful edge in design thinking, system
-        planning, and intentional problem-solving.
-      </Text>
-      <Text size="buttonText">
-        <span className="font-bold">Code.Coach.Culture</span> was born to bring
-        those worlds together. It’s a personal blog—but also a technical case
-        study in how to design with clarity, scale, and heart.
-      </Text>
-      <hr className="w-full border-t border-gray-600 my-6" />
-
-      <Subtitle>🧱 Planning & Structure</Subtitle>
-      <Text size="buttonText">
-        I broke the project down like a real product:
-      </Text>
-      <ul className="list-disc ml-10">
-        <li>
-          <span className="font-semibold">Categories:</span> I created 4 main
-          content pillars:Dev Diaries, Leadership Logs, Ops & Strategy, and Mind
-          & Motivation
-        </li>
-        <li>
-          <span className="font-semibold">Content System:</span> I chose MDX for
-          blog post storage—keeping it lightweight and future-proof while
-          allowing rich content formatting and custom components
-        </li>
-        <li>
-          <span className="font-semibold">Routing:</span> Leveraged Next.js App
-          Router for clean URL structures like /dev-diaries/[slug]
-        </li>
-        <li>
-          <span className="font-semibold">Reusability:</span>Reusability:
-          Componentized layouts and utilities like Hero, CategoryLinks, and
-          PostCard
-        </li>
-        <li>
-          <span className="font-semibold">Style:</span> Used TailwindCSS for
-          consistent, expressive design with mobile responsiveness baked in
-        </li>
-        <li>
-          <span className="font-semibold">Hosting:</span> Deployed to Vercel
-          with static site generation using generateStaticParams
-        </li>
-      </ul>
-      <hr className="w-full border-t border-gray-600 my-6" />
-
-      <Subtitle>🧠 Learning & Challenges</Subtitle>
-      <Text size="buttonText">
-        This wasn’t just a project—it was a journey. I had to:
-      </Text>
-      <ul className="list-disc ml-10">
-        <li>Learn how to use MDX inside a modern Next.js setup</li>
-        <li>Debug hydration errors and route mismatches</li>
-        <li>Structure my content for growth, not just MVP</li>
-        <li>
-          Think like a frontend engineer while moving with the mindset of an
-          operator
-        </li>
-        <li>
-          Use AI (ChatGPT) to help me solve problems faster and understand best
-          practices
-        </li>
-      </ul>
-      <Text size="buttonText">
-        With every obstacle, I built new skills: understanding how to map files
-        to routes, pre-render with static generation, use semantic HTML, and
-        write clean, responsive design.
-      </Text>
-      <hr className="w-full border-t border-gray-600 my-6" />
-
-      <Subtitle>🚀 Deployment & Results</Subtitle>
-      <Text size="buttonText">Once the site was built, I:</Text>
-      <ul className="list-disc ml-10">
-        <li>Ran local builds with npm run build to confirm stability</li>
-        <li>Deployed to Vercel with GitHub integration</li>
-        <li>Validated every route, post, and component</li>
-        <li>Created a polished README.md and opened the repo to the public</li>
-      </ul>
-      <Text size="buttonText">
-        What I launched wasn’t just a blog. It was a portfolio piece, a
-        conversation starter, and a digital home for my unique blend of skills.
-      </Text>
-      <hr className="w-full border-t border-gray-600 my-6" />
-
-      <Subtitle>🌟 Why It Matters</Subtitle>
       <Text>
-        <span className="font-bold">Code.Coach.Culture</span> is more than code.
-        It’s my blueprint.
+        Stack: Next.js 14, TypeScript, Tailwind CSS, MDX, Framer Motion, Vercel
+      </Text>
+      <hr className="w-full border-t border-gray-600 my-6" />
+
+      <Subtitle>🧠 The Concept</Subtitle>
+      <Text size="buttonText">
+        I’ve always wanted to blog, but I didn’t want to separate who I was—
+        a software developer and a seasoned leader. With 20+ years in customer
+        service and 10+ in leadership, I knew how to coach people, manage
+        complexity, and build high-performing teams. When I began coding,
+        I realized those same skills helped me design systems, think
+        intentionally, and build scalable products.
       </Text>
       <Text size="buttonText">
-        I’ve stopped separating who I was from who I’m becoming. This platform
-        is proof that technical growth and people development can coexist—and
-        even strengthen each other.
+        <span className="font-bold">Code.Coach.Culture</span> is my blueprint.
+        It’s where my past meets my potential. I wanted to share what I know,
+        what I’m learning, and how I lead—through code, coaching, and culture.
+      </Text>
+      <hr className="w-full border-t border-gray-600 my-6" />
+
+      <Subtitle>🎯 The Goal</Subtitle>
+      <ul className="list-disc ml-10">
+        <li>Create a modern personal blog with clean structure and custom styling</li>
+        <li>Showcase both leadership and engineering ability in one product</li>
+        <li>Practice reusable UI patterns and structured thinking with MDX</li>
+        <li>Ship a project I could proudly show to recruiters and clients</li>
+      </ul>
+      <hr className="w-full border-t border-gray-600 my-6" />
+
+      <Subtitle>🔨 The Build Journey</Subtitle>
+      <Text>1. Foundation & Structure</Text>
+      <Text size="buttonText">
+        I started with Next.js 14 and decided to store posts in MDX while
+        prepping the system for a future backend. I designed four categories—
+        Dev Diaries, Leadership Logs, Ops & Strategy, and Mind & Motivation—
+        to house content that reflected my full identity.
+      </Text>
+      <Text>2. Layout & Components</Text>
+      <Text size="buttonText">
+        I built reusable components for routing, layout, and post rendering.
+        Styled everything with Tailwind and added motion to the hero with
+        Framer Motion. Each post is statically generated using
+        `generateStaticParams`.
+      </Text>
+      <Text>3. Real Challenges</Text>
+      <Text size="buttonText">
+        I ran into hydration issues, file-routing errors, and MDX syntax quirks.
+        I used AI to help debug and improve my system structure—learning how to
+        pre-render content, fix hydration mismatches, and style MDX posts
+        semantically.
+      </Text>
+      <Text>4. Deploy & Polish</Text>
+      <Text size="buttonText">
+        Once stable, I deployed to Vercel, confirmed all routes, optimized
+        metadata, and wrote a professional README to publish the repo.
+      </Text>
+      <hr className="w-full border-t border-gray-600 my-6" />
+
+      <Subtitle>🤖 How I Used AI</Subtitle>
+      <ul className="list-disc ml-10">
+        <li>Debugged MDX rendering and dynamic routing in the App Router</li>
+        <li>Improved file structure, accessibility, and mobile responsiveness</li>
+        <li>Learned how to approach projects like a product engineer, not just a coder</li>
+        <li>Got step-by-step help when stuck but kept ownership of the build</li>
+      </ul>
+      <Text size="buttonText">
+        AI wasn’t just a tool—it was my thought partner. It helped me move from confusion to clarity without skipping the learning process.
+      </Text>
+      <hr className="w-full border-t border-gray-600 my-6" />
+
+      <Subtitle>📈 Outcomes</Subtitle>
+      <ul className="list-disc ml-10">
+        <li>Launched a live blog that reflects my story, skills, and identity</li>
+        <li>Mastered MDX integration in a modern Next.js App Router setup</li>
+        <li>Built a scalable foundation for future content and backend upgrades</li>
+        <li>Published a new Dev Diaries post documenting the journey itself</li>
+      </ul>
+      <hr className="w-full border-t border-gray-600 my-6" />
+
+      <Subtitle>🔄 Next Steps</Subtitle>
+      <ul className="list-disc ml-10">
+        <li>Eventually migrate content to a database-powered backend</li>
+        <li>Add search and filter by category or tags</li>
+        <li>Consider adding a contact form integration and analytics</li>
+        <li>Continue publishing posts that bridge tech and leadership</li>
+      </ul>
+      <hr className="w-full border-t border-gray-600 my-6" />
+
+      <Subtitle>🧾 Final Thoughts</Subtitle>
+      <Text size="buttonText">
+        <span className="font-bold">Code.Coach.Culture</span> is more than a blog—
+        it’s a reflection of how I build, how I lead, and how I learn.  
+        It’s proof that the soft skills I gained from decades in customer service
+        are an asset in tech—not a separate identity.
       </Text>
       <Text size="buttonText">
-        For recruiters and potential clients, it’s a window into my mind: how I
-        build, how I lead, and how I think.
+        I’m not just trying to code. I’m learning to build—with purpose,
+        intention, and clarity.
       </Text>
-      <Text size="buttonText">
-        If you're looking for someone who can connect dots between customer
-        experience, team leadership, and scalable software—this is the case
-        study you were meant to see.
-      </Text>
+      <FlexContainer justifyContent="center" width="w-full">
+        <Button href="/case-studies">Back to Case Studies</Button>
+      </FlexContainer>
     </Main>
   );
 }

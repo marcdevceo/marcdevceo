@@ -13,7 +13,7 @@ export const caseStudiesList: CaseStudiesType[] = [
   {
     title: "MarcDevCEO Portfolio",
     slug: "marcdevceo-portfolio",
-    href: "/case-studies/marcdevceo-portfolio",
+    href: "/case-studies/marcdevceo-portfolio-case",
     summary: (
       <>
         <Text size="caption">
