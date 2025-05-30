@@ -32,7 +32,7 @@ export default function ProjectCard() {
               <Button href={project.liveUrl} target="_blank">
                 Visit the Site
               </Button>
-              <Button href={project.liveUrl} target="_blank">
+              <Button href={project.githubUrl} target="_blank">
                 GitHub Link
               </Button>
             </FlexContainer>

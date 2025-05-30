@@ -46,8 +46,8 @@ export default function MobileNav({ links }: MobileNavProps) {
                   className={clsx(
                     "w-full text-center cursor-pointer transition-colors",
                     isActive
-                      ? "bg-primary text-white font-semibold"
-                      : "bg-surface text-text-primary hover:bg-accent"
+                      ? "bg-transparent text-white font-semibold"
+                      : "bg-transparent text-text-primary hover:bg-accent"
                   )}
                   padding="sm"
                   rounded
