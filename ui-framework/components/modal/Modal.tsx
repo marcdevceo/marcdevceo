@@ -25,21 +25,25 @@ const Modal: React.FC<ModalProps> = ({
   children,
   className = "",
 }) => {
-  const originalOverflow = useRef<string>(document.body.style.overflow);
+  const originalOverflow = useRef<string>("");
 
   // Disable background scroll when modal is open
   useEffect(() => {
-    if (isOpen) {
+    if (typeof document !== "undefined" && isOpen) {
       originalOverflow.current = document.body.style.overflow;
       document.body.style.overflow = "hidden";
     }
 
     return () => {
-      document.body.style.overflow = originalOverflow.current;
+      if (typeof document !== "undefined") {
+        document.body.style.overflow = originalOverflow.current;
+      }
     };
   }, [isOpen]);
 
   if (!isOpen) return null;
+
+  if (typeof document === "undefined") return null;
 
   return createPortal(
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-black/50">
