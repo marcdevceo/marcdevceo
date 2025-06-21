@@ -1,4 +1,4 @@
-import { Text } from "@/components/ui/Typography";
+import { BodyText } from "@/ui-framework";
 import { ReactNode } from "react";
 
 export type CaseStudiesType = {
@@ -16,12 +16,12 @@ export const caseStudiesList: CaseStudiesType[] = [
     href: "/case-studies/moex-gifts",
     summary: (
       <>
-        <Text size="caption">
+        <BodyText size="caption">
           MoEx Gifts is a playful e-commerce experience centered on expressive
           gift giving. Built with Next.js and a custom UI framework, it features
           a dynamic Stripe Checkout flow, styled product carousel, and seasonal
           branding to bring joy to the shopping journey.
-        </Text>
+        </BodyText>
       </>
     ),
     img: [],
@@ -32,13 +32,13 @@ export const caseStudiesList: CaseStudiesType[] = [
     href: "/case-studies/ui-framework-case",
     summary: (
       <>
-        <Text size="caption">
+        <BodyText size="caption">
           MELLC UI Framework is a custom-built design system crafted to bring
           React Native–style structure and consistency into my web development
           workflow. By combining Tailwind CSS with reusable components and
           semantic design tokens, I created a system that’s flexible,
           brand-ready, and responsive by default.{" "}
-        </Text>
+        </BodyText>
       </>
     ),
     img: [],
@@ -49,12 +49,12 @@ export const caseStudiesList: CaseStudiesType[] = [
     href: "/case-studies/marcdevceo-portfolio-case",
     summary: (
       <>
-        <Text size="caption">
+        <BodyText size="caption">
           The MarcDevCEO Portfolio is a bold, fully custom developer showcase
           built with a reusable UI framework tailored for personal branding. It
           highlights clean design, consistent theming, and scalable components —
           all while reflecting Marc’s technical range and creative personality.{" "}
-        </Text>
+        </BodyText>
       </>
     ),
     img: [],
@@ -65,12 +65,12 @@ export const caseStudiesList: CaseStudiesType[] = [
     href: "/case-studies/code-coach-culture-case",
     summary: (
       <>
-        <Text size="caption">
+        <BodyText size="caption">
           Code.Coach.Culture is my personal brand where I blend 20+ years of
           leadership with full-stack development. It highlights my work, growth,
           and values—focusing on clean code, user-first design, and building
           culture through tech.{" "}
-        </Text>
+        </BodyText>
       </>
     ),
     img: [],
@@ -81,11 +81,11 @@ export const caseStudiesList: CaseStudiesType[] = [
     href: "/case-studies/movifind-case",
     summary: (
       <>
-        <Text size="caption">
+        <BodyText size="caption">
           MoviFind is a Netflix-inspired movie discovery app built with Next.js,
           Tailwind CSS, and the TMDB API. The app allows users to explore
           trending and top-rated movies in a sleek, mobile-friendly UI.
-        </Text>
+        </BodyText>
       </>
     ),
     img: [],
