@@ -1,18 +1,17 @@
 import AboutPrevious from "@/components/home/AboutPrevious";
 import FeaturedProjects from "@/components/home/FeaturedProjects";
 import HeroSection from "@/components/home/HeroSection";
-import { FlexContainer, Main, SpacerY } from "@/components/ui/Spacer";
-import {} from "@/components/ui/Typography";
+import { FlexContainer, MainContainer } from "@/ui-framework";
 
 export default function Home() {
   return (
-    <Main>
+    <MainContainer>
       <HeroSection />
-      <SpacerY size="xxl" />
-      <FlexContainer flex="primary" gap="xxl" alignItems="stretch">
+      <FlexContainer flexDirection="primary" gap="2xl" alignItems="stretch">
         <FeaturedProjects />
         <AboutPrevious />
       </FlexContainer>
-    </Main>
+      
+    </MainContainer>
   );
 }

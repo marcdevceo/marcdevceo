@@ -1,15 +1,14 @@
 /* eslint-disable react/no-unescaped-entities */
-import Button from "@/components/ui/Button";
-import { FlexContainer } from "../ui/Spacer";
-import { Text } from "../ui/Typography";
+
+import { BodyText, Button, FlexContainer } from "@/ui-framework";
 
 export default function CTA() {
   return (
-    <FlexContainer justifyContent="center" width="w-full">
+    <FlexContainer justify="center" width="full">
       <Button href="/contact" className="w-full">
-        <Text align="center" size="subtitle" weight="bold">
+        <BodyText align="center" size="subtitle" weight="bold">
           Let's Work Together
-        </Text>
+        </BodyText>
       </Button>
     </FlexContainer>
   );

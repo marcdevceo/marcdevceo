@@ -11,6 +11,22 @@ export type CaseStudiesType = {
 
 export const caseStudiesList: CaseStudiesType[] = [
   {
+    title: "MoEx Gifts E-Commerce Site",
+    slug: "moex-gifts",
+    href: "/case-studies/moex-gifts",
+    summary: (
+      <>
+        <Text size="caption">
+          MoEx Gifts is a playful e-commerce experience centered on expressive
+          gift giving. Built with Next.js and a custom UI framework, it features
+          a dynamic Stripe Checkout flow, styled product carousel, and seasonal
+          branding to bring joy to the shopping journey.
+        </Text>
+      </>
+    ),
+    img: [],
+  },
+  {
     title: "UI Framework",
     slug: "ui-framework-case ",
     href: "/case-studies/ui-framework-case",

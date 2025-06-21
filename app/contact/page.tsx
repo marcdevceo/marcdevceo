@@ -1,17 +1,15 @@
 import ContactForm from "@/components/contact/ContactForm";
 import ContactHero from "@/components/contact/ContactHero";
 import ContactInfo from "@/components/contact/ContactInfo";
-import { Main, SpacerY } from "@/components/ui/Spacer";
+import { MainContainer } from "@/ui-framework";
 
 
 export default function Contact() {
     return (
-        <Main>
+        <MainContainer gap="2xl">
             <ContactHero />
-            <SpacerY size="xxl" />
             <ContactInfo />
-            <SpacerY size="xxl" />
             <ContactForm />
-        </Main>
+        </MainContainer>
     )
 }

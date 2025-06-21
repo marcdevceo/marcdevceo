@@ -5,13 +5,11 @@ const config: Config = {
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./app/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./ui-framework/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {
-      colors: {
-        neutral: "#0D0D0D",
-        surface: "#1A1A1A",
-      },
+      
     },
   },
   plugins: [],

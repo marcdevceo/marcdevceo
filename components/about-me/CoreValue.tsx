@@ -1,51 +1,49 @@
 /* eslint-disable react/no-unescaped-entities */
-import Card from "@/components/ui/Card";
-import { FlexContainer, SpacerY } from "@/components/ui/Spacer";
-import { Subtitle, Text } from "@/components/ui/Typography";
+
+import { BlockContainer, BodyText, Card, FlexContainer, Subtitle } from "@/ui-framework";
 
 export default function CoreValue() {
   return (
-    <>
+    <BlockContainer>
       <Subtitle align="center">Core Values</Subtitle>
-      <SpacerY />
       <FlexContainer
-        flex="wrap"
-        justifyContent="center"
-        width="w-full"
-        gap="xl"
-        className="h-full"
+        flexWrap="wrap"
+        justify="center"
+        width="full"
+        height="full"
+        gap="xl"    
       >
         <Card className="">
-          <Text align="center" weight="bold">
+          <BodyText align="center" weight="bold">
             Empathy-driven UX
-          </Text>
-          <Text>
+          </BodyText>
+          <BodyText>
             I design with the user’s emotions, context, and needs at the
             forefront. Having spent years supporting real people, I build
             experiences that feel intuitive, respectful, and human-centered.
-          </Text>
+          </BodyText>
         </Card>
         <Card className="">
-          <Text align="center" weight="bold">
+          <BodyText align="center" weight="bold">
             Systematic Thinking
-          </Text>
-          <Text>
+          </BodyText>
+          <BodyText>
             Great products are built on great systems. I approach development
             with structure, scalability, and consistency — from design tokens to
             API architecture — so everything fits, grows, and lasts.
-          </Text>
+          </BodyText>
         </Card>
         <Card className="">
-          <Text align="center" weight="bold">
+          <BodyText align="center" weight="bold">
             Product over Features
-          </Text>
-          <Text>
+          </BodyText>
+          <BodyText>
             I don't just ship code — I ship outcomes. Every decision I make is
             tied to the bigger picture, focusing on delivering real value rather
             than just adding more buttons or buzzwords.
-          </Text>
+          </BodyText>
         </Card>
       </FlexContainer>
-    </>
+    </BlockContainer>
   );
 }

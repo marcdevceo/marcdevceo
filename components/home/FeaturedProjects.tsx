@@ -1,8 +1,6 @@
 import Link from "next/link";
-import Card from "@/components/ui/Card";
-import {  SpacerY } from "@/components/ui/Spacer";
-import { Subtitle, Text } from "@/components/ui/Typography";
 import Image from "next/image";
+import { BodyText, Card, Subtitle } from "@/ui-framework";
 
 export default function FeaturedProjects() {
   return (
@@ -14,10 +12,9 @@ export default function FeaturedProjects() {
       >
         <Card>
             <Subtitle align="center">Featured Project</Subtitle>
-            <Text align="center" weight="bold">
+            <BodyText align="center" weight="bold">
               Click to Visit!
-            </Text>
-            <SpacerY size="xxxl" />
+            </BodyText>
             <Image
               src="/movifind.png"
               alt="MoviFind Image"

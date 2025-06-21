@@ -3,11 +3,7 @@
 
 import { useState } from "react";
 import { sendEmail } from "@/app/actions/sendEmail";
-import { Container, SpacerY } from "@/components/ui/Spacer";
-import Card from "@/components/ui/Card";
-import { Subtitle, Text } from "@/components/ui/Typography";
-import Button from "@/components/ui/Button";
-import Modal from "@/components/ui/Modal";
+import { BlockContainer, BodyText, Button, Card, Modal, Subtitle } from "@/ui-framework";
 
 export default function ContactForm() {
   const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
@@ -29,10 +25,9 @@ export default function ContactForm() {
   }
 
   return (
-    <Container padding="xl" className="max-w-xl mx-auto">
+    <BlockContainer padding="xl" className="max-w-xl mx-auto">
       <Card>
         <Subtitle align="center">Contact Form</Subtitle>
-        <SpacerY size="md" />
 
         <form action={handleSubmit} className="flex flex-col gap-4">
           <input
@@ -59,16 +54,15 @@ export default function ContactForm() {
           <Button type="submit">Send Message</Button>
         </form>
 
-        <SpacerY size="md" />
         {status === "success" && (
-          <Text align="center" color="success">
+          <BodyText align="center" color="success">
             Thanks for reaching out! I'll be in touch soon.
-          </Text>
+          </BodyText>
         )}
         {status === "error" && (
-          <Text align="center" color="danger">
+          <BodyText align="center" color="danger">
             Something went wrong. Please try again later.
-          </Text>
+          </BodyText>
         )}
       </Card>
       <Modal
@@ -80,16 +74,16 @@ export default function ContactForm() {
         title={status === "success" ? "Message Sent" : "Oops!"}
       >
         {status === "success" && (
-          <Text align="center" color="success">
+          <BodyText align="center" color="success">
             Thanks for reaching out! I’ll be in touch soon.
-          </Text>
+          </BodyText>
         )}
         {status === "error" && (
-          <Text align="center" color="danger">
+          <BodyText align="center" color="danger">
             Something went wrong. Please try again later.
-          </Text>
+          </BodyText>
         )}
       </Modal>
-    </Container>
+    </BlockContainer>
   );
 }

@@ -1,45 +1,43 @@
-import Button from "@/components/ui/Button";
-import { FlexContainer, Main } from "@/components/ui/Spacer";
-import Title, { Subtitle, Text } from "@/components/ui/Typography";
+import { BodyText, Button, FlexContainer, MainContainer, Subtitle, Title } from "@/ui-framework";
 
 export default function CodeCoachCultureCase() {
   return (
-    <Main gap="md">
+    <MainContainer gap="md">
       <a href="/case-studies">
-        <Text size="sm" color="secondary">
+        <BodyText size="sm" color="secondary">
           ← Back to Case Studies
-        </Text>
+        </BodyText>
       </a>
       <br />
 
       <Title>📚 Code.Coach.Culture: Case Study</Title>
-      <Text>
+      <BodyText>
         Live Site:{" "}
         <span>
           <a href="https://code-coach-culture.vercel.app">
             https://code-coach-culture.vercel.app
           </a>
         </span>
-      </Text>
-      <Text>
+      </BodyText>
+      <BodyText>
         Stack: Next.js 14, TypeScript, Tailwind CSS, MDX, Framer Motion, Vercel
-      </Text>
+      </BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🧠 The Concept</Subtitle>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         I’ve always wanted to blog, but I didn’t want to separate who I was—
         a software developer and a seasoned leader. With 20+ years in customer
         service and 10+ in leadership, I knew how to coach people, manage
         complexity, and build high-performing teams. When I began coding,
         I realized those same skills helped me design systems, think
         intentionally, and build scalable products.
-      </Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText size="buttonText">
         <span className="font-bold">Code.Coach.Culture</span> is my blueprint.
         It’s where my past meets my potential. I wanted to share what I know,
         what I’m learning, and how I lead—through code, coaching, and culture.
-      </Text>
+      </BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🎯 The Goal</Subtitle>
@@ -52,32 +50,32 @@ export default function CodeCoachCultureCase() {
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🔨 The Build Journey</Subtitle>
-      <Text>1. Foundation & Structure</Text>
-      <Text size="buttonText">
+      <BodyText>1. Foundation & Structure</BodyText>
+      <BodyText size="buttonText">
         I started with Next.js 14 and decided to store posts in MDX while
         prepping the system for a future backend. I designed four categories—
         Dev Diaries, Leadership Logs, Ops & Strategy, and Mind & Motivation—
         to house content that reflected my full identity.
-      </Text>
-      <Text>2. Layout & Components</Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText>2. Layout & Components</BodyText>
+      <BodyText size="buttonText">
         I built reusable components for routing, layout, and post rendering.
         Styled everything with Tailwind and added motion to the hero with
         Framer Motion. Each post is statically generated using
         `generateStaticParams`.
-      </Text>
-      <Text>3. Real Challenges</Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText>3. Real Challenges</BodyText>
+      <BodyText size="buttonText">
         I ran into hydration issues, file-routing errors, and MDX syntax quirks.
         I used AI to help debug and improve my system structure—learning how to
         pre-render content, fix hydration mismatches, and style MDX posts
         semantically.
-      </Text>
-      <Text>4. Deploy & Polish</Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText>4. Deploy & Polish</BodyText>
+      <BodyText size="buttonText">
         Once stable, I deployed to Vercel, confirmed all routes, optimized
         metadata, and wrote a professional README to publish the repo.
-      </Text>
+      </BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🤖 How I Used AI</Subtitle>
@@ -87,9 +85,9 @@ export default function CodeCoachCultureCase() {
         <li>Learned how to approach projects like a product engineer, not just a coder</li>
         <li>Got step-by-step help when stuck but kept ownership of the build</li>
       </ul>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         AI wasn’t just a tool—it was my thought partner. It helped me move from confusion to clarity without skipping the learning process.
-      </Text>
+      </BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>📈 Outcomes</Subtitle>
@@ -111,19 +109,19 @@ export default function CodeCoachCultureCase() {
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🧾 Final Thoughts</Subtitle>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         <span className="font-bold">Code.Coach.Culture</span> is more than a blog—
         it’s a reflection of how I build, how I lead, and how I learn.  
         It’s proof that the soft skills I gained from decades in customer service
         are an asset in tech—not a separate identity.
-      </Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText size="buttonText">
         I’m not just trying to code. I’m learning to build—with purpose,
         intention, and clarity.
-      </Text>
-      <FlexContainer justifyContent="center" width="w-full">
+      </BodyText>
+      <FlexContainer justify="center" width="full">
         <Button href="/case-studies">Back to Case Studies</Button>
       </FlexContainer>
-    </Main>
+    </MainContainer>
   );
 }

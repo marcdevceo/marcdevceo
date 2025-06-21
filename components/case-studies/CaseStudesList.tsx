@@ -1,6 +1,5 @@
-import Card from "@/components/ui/Card";
-import { Subtitle } from "../ui/Typography";
 import { caseStudiesList } from "@/data/casestudies";
+import { Card, Subtitle } from "@/ui-framework";
 import Link from "next/link";
 
 export default function CaseStudiesList() {

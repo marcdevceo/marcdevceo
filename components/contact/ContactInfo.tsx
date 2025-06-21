@@ -1,32 +1,28 @@
-import Card from "@/components/ui/Card";
-import { Subtitle, Text } from "@/components/ui/Typography";
 import { contactlist } from "@/data/contactlist";
-import { FlexContainer, SpacerY } from "../ui/Spacer";
+import { BodyText, Card, FlexContainer, Subtitle } from "@/ui-framework";
 
 export default function ContactInfo() {
   return (
-    <FlexContainer width="w-full" justifyContent="center">
+    <FlexContainer width="full" justify="center">
       <Card>
         <Subtitle align="center">Click to Explore!</Subtitle>
-        <SpacerY size="md" />
         {contactlist.map((contact) => {
-            return (
-                <Text weight="bold" key={contact.name}>
-                {contact.name}:
-                <span className="italic font-semibold mx-2 text-lg">
-                    <a
-                        href={contact.href}
-                        target="_blank"
-                        rel="noopner noreferrer"
-                        className="hover:text-accent transition-colors"
-                    >
-                        {contact.link}
-                    </a>
-                </span>
-                </Text>
-            )
-        })
-        }
+          return (
+            <BodyText weight="bold" key={contact.name}>
+              {contact.name}:
+              <BodyText italic weight="semibold" size="lg">
+                <a
+                  href={contact.href}
+                  target="_blank"
+                  rel="noopner noreferrer"
+                  className="hover:text-accent transition-colors"
+                >
+                  {contact.link}
+                </a>
+              </BodyText>
+            </BodyText>
+          );
+        })}
       </Card>
     </FlexContainer>
   );

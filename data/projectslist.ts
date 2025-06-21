@@ -36,4 +36,17 @@ export const projectslist = [
     githubUrl: "https://github.com/marcdevceo/movifind",
     caseStudyUrl: "",
   },
+  {
+    title: "MoEx Gifts",
+    description: `MoEx Gifts is a custom e-commerce site designed for joyful gift giving, featuring 
+      a Stripe-powered checkout flow, themed product carousels, and a vibrant brand aesthetic. 
+      Built with a reusable UI framework and custom fonts, it blends frontend creativity with 
+      clean backend integration.`,
+    img: "/moexgifts.png",
+    techStack:
+      "Next.js | TypeScript | Tailwind CSS | Stripe API | Custom UI Framework | Vercel",
+    liveUrl: "https://moexgifts.vercel.app",
+    githubUrl: "https://github.com/marcdevceo/moexgifts",
+    caseStudyUrl: "",
+  },
 ];

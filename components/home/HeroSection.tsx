@@ -1,17 +1,16 @@
 /* eslint-disable react/no-unescaped-entities */
-import Button from "@/components/ui/Button";
-import { Container, FlexContainer } from "@/components/ui/Spacer";
-import Title, { Text } from "@/components/ui/Typography";
+
+import { BlockContainer, BodyText, Button, FlexContainer, Title } from "@/ui-framework";
 
 export default function HeroSection() {
   return (
-    <FlexContainer bgVarient="accent" flex="column" padding="primary">
+    <FlexContainer bg="accent" flexDirection="column" padding="primary">
       <Title>Welcome to MarcDevCEO Portfolio</Title>
-      <Container padding="primary">
-        <Text
+      <BlockContainer padding="primary">
+        <BodyText
           align="center"
           color="neutral"
-          font="sans"
+          font="body"
           weight="medium"
           size="body"
         >
@@ -19,9 +18,9 @@ export default function HeroSection() {
           the gap between user pain points and elegant solutions. My experience
           in customer service shaped how I design, build, and launch digital
           products people actually love to use.
-        </Text>
-      </Container>
-      <FlexContainer padding="md" justifyContent="center" className="w-full">
+        </BodyText>
+      </BlockContainer>
+      <FlexContainer padding="md" justify="center" className="w-full">
         <Button href="/contact">
           Let's Get Started!
         </Button>

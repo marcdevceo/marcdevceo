@@ -1,30 +1,29 @@
 /* eslint-disable react/no-unescaped-entities */
-import Button from "@/components/ui/Button";
-import { FlexContainer, Main } from "@/components/ui/Spacer";
-import Title, { Subtitle, Text } from "@/components/ui/Typography";
+
+import { BodyText, Button, FlexContainer, MainContainer, Subtitle, Title } from "@/ui-framework";
 
 export default function MoviFindCase() {
   return (
-    <Main gap="md">
+    <MainContainer gap="md">
       <a href="/case-studies">
-        <Text size="sm" color="secondary">
+        <BodyText size="sm" color="secondary">
           ← Back to Case Studies
-        </Text>
+        </BodyText>
       </a>
       <br />
 
       <Title>📽️ MoviFind: Case Study</Title>
-      <Text>
+      <BodyText>
         Live Site:{" "}
         <span>
           <a href="https://movifind.vercel.app">https://movifind.vercel.app</a>
         </span>
-      </Text>
-      <Text>Stack: Next.js 14, TypeScript, Tailwind CSS, TMDB API, Vercel</Text>
+      </BodyText>
+      <BodyText>Stack: Next.js 14, TypeScript, Tailwind CSS, TMDB API, Vercel</BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🧠 The Idea</Subtitle>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         MoviFind was inspired by a real request from a friend who loved watching
         movie trailers but didn’t want the hassle of searching YouTube or
         relying on word-of-mouth. She said,{" "}
@@ -33,7 +32,7 @@ export default function MoviFindCase() {
           want it bulky, just something clean and easy to use.”
         </span>{" "}
         That became my north star.
-      </Text>
+      </BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🎯 The Goal</Subtitle>
@@ -49,21 +48,21 @@ export default function MoviFindCase() {
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🔨 The Build Journey</Subtitle>
-      <Text>1. Version 1 Misstep</Text>
-      <Text size="buttonText">
+      <BodyText>1. Version 1 Misstep</BodyText>
+      <BodyText size="buttonText">
         I initially built a version that intentionally avoided Netflix's layout,
         trying to be overly unique. The result? A clunky, confusing app that
         didn’t meet the goal. I wasn’t listening — I was building what I thought
         she wanted.
-      </Text>
-      <Text>2. Pivot & Realignment</Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText>2. Pivot & Realignment</BodyText>
+      <BodyText size="buttonText">
         I paused, reconnected with the original request, and decided to lean
         into familiarity. Netflix’s layout is effective for a reason. I
         redesigned the homepage to feel like a clean, tailored Netflix — but
         with my own flavor.
-      </Text>
-      <Text>3. Feature Focus</Text>
+      </BodyText>
+      <BodyText>3. Feature Focus</BodyText>
       <ul className="list-disc ml-10">
         <li className="italic">
           Featured Banner with trailer button in a modal
@@ -79,20 +78,20 @@ export default function MoviFindCase() {
           TMDB API as the sole source of reliable, updated movie data
         </li>
       </ul>
-      <Text>4. Refinement & Deployment</Text>
-      <Text size="buttonText">
+      <BodyText>4. Refinement & Deployment</BodyText>
+      <BodyText size="buttonText">
         As I built, I hit real-world issues: API key configs, layout
         inconsistencies, image scaling, and parameter errors. I worked through
         them with live debugging, console logs, and some help from AI. When all
         features were stable, I deployed to Vercel and did one final pass for
         polish.
-      </Text>
+      </BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🤖 AI as a Coding Partner</Subtitle>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         Throughout development, I used AI (ChatGPT) as a second brain:
-      </Text>
+      </BodyText>
       <ul className="list-disc ml-10">
         <li className="italic">
           For API strategy, error handling, and refactoring
@@ -102,10 +101,10 @@ export default function MoviFindCase() {
           To think through architecture before I wrote code
         </li>
       </ul>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         It was like having a senior dev pair-program with me — guiding when I
         was stuck, but letting me drive.
-      </Text>
+      </BodyText>
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>📈 Outcomes</Subtitle>
@@ -126,7 +125,7 @@ export default function MoviFindCase() {
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🔄 Next Steps: Version 2</Subtitle>
-      <Text size="buttonText">Planned updates based on feedback:</Text>
+      <BodyText size="buttonText">Planned updates based on feedback:</BodyText>
       <ul className="list-disc ml-10">
         <li>Search bar</li>
         <li>Better trailer discovery</li>
@@ -147,9 +146,9 @@ export default function MoviFindCase() {
           replacing deep thinking.
         </li>
       </ul>
-      <FlexContainer justifyContent="center" width="w-full">
+      <FlexContainer justify="center" width="full">
         <Button href="/case-studies">Back to Case Studies</Button>
       </FlexContainer>
-    </Main>
+    </MainContainer>
   );
 }

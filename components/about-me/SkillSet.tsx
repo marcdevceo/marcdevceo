@@ -1,12 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Card from "@/components/ui/Card";
-import { List, Subtitle, Text } from "@/components/ui/Typography";
-import { FlexContainer, SpacerY } from "@/components/ui/Spacer";
-import Button from "@/components/ui/Button";
-import Modal from "@/components/ui/Modal";
 import { skillMap, SkillType } from "@/data/skillslist";
+import { BodyText, Button, Card, FlexContainer, List, Modal, Subtitle } from "@/ui-framework";
 
 export default function SkillSet() {
   const [selectedSkill, setSelectedSkill] = useState<SkillType | null>(null);
@@ -22,11 +18,10 @@ export default function SkillSet() {
   return (
     <>
       <Subtitle align="center">Technical Skillsets</Subtitle>
-      <Text align="center" size="buttonText">Click each for more details:</Text>
-      <SpacerY size="xl" />
+      <BodyText align="center" size="buttonText">Click each for more details:</BodyText>
       <FlexContainer
-        justifyContent="center"
-        width="w-full"
+        justify="center"
+        width="full"
         gap="xl"
         className="flex-wrap"
       >
@@ -42,7 +37,7 @@ export default function SkillSet() {
           title={selectedSkill ? skillMap[selectedSkill].title : ""}
         >
           {selectedSkill && (
-            <Card background="none">
+            <Card bg="none">
               <List
                 lists={skillMap[selectedSkill].skills}
                 renderItem={(item, i) => <li key={i}>{item}</li>}

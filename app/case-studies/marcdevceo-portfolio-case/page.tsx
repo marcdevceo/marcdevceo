@@ -1,45 +1,43 @@
-import Button from "@/components/ui/Button";
-import { FlexContainer, Main } from "@/components/ui/Spacer";
-import Title, { Subtitle, Text } from "@/components/ui/Typography";
+import { BodyText, Button, FlexContainer, MainContainer, Subtitle, Title } from "@/ui-framework";
 
 export default function MarcDevCEOPortfolioCase() {
   return (
-    <Main gap="md">
+    <MainContainer gap="md">
       <a href="/case-studies">
-        <Text size="sm" color="secondary">
+        <BodyText size="sm" color="secondary">
           ← Back to Case Studies
-        </Text>
+        </BodyText>
       </a>
       <br />
 
       <Title>🧑🏾‍💻 MarcDevCEO Portfolio: Case Study</Title>
-      <Text>
+      <BodyText>
         Live Site:{" "}
         <span className="italic font-semibold">
           <a href="https://marcdevceo.vercel.app">marcdevceo.vercel.app</a>
         </span>
-      </Text>
-      <Text>Stack: Next.js 14, Tailwind CSS, Custom UI Framework, Vercel</Text>
+      </BodyText>
+      <BodyText>Stack: Next.js 14, Tailwind CSS, Custom UI Framework, Vercel</BodyText>
 
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🧠 The Journey</Subtitle>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         This is version three of my developer portfolio—and easily the most
         intentional. The first two attempts either lacked polish or didn’t feel
         like “me.” Something was always missing: consistent design, visual
         identity, or structure.
-      </Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText size="buttonText">
         When I started the UI/UX Product Design Bootcamp from ZeroToMastery, I
         knew it was time to scrap everything and rebuild from scratch. Not just
         a portfolio—an experience.
-      </Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText size="buttonText">
         The biggest breakthrough? Creating my own custom UI framework with
         design tokens. It gave me the consistency I had always struggled to
         maintain across pages and projects.
-      </Text>
+      </BodyText>
 
       <hr className="w-full border-t border-gray-600 my-6" />
 
@@ -86,10 +84,10 @@ export default function MarcDevCEOPortfolioCase() {
           Getting obsessive over details—then learning when to stop tweaking
         </li>
       </ul>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         Every hard lesson helped me grow as both a designer and developer. And
         now, future projects will be easier to spin up thanks to this framework.
-      </Text>
+      </BodyText>
 
       <hr className="w-full border-t border-gray-600 my-6" />
 
@@ -104,31 +102,31 @@ export default function MarcDevCEOPortfolioCase() {
         <li>Built a scalable base for future pages and side projects</li>
         <li>Gained confidence in my design taste and system-building skills</li>
       </ul>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         It’s fast, responsive, bold, and clean. Most importantly—it’s mine. From
         the typography to the color palette, it feels like a true reflection of
         who I am as a developer.
-      </Text>
+      </BodyText>
 
       <hr className="w-full border-t border-gray-600 my-6" />
 
       <Subtitle>🌟 Why This Portfolio Matters</Subtitle>
-      <Text size="buttonText">
+      <BodyText size="buttonText">
         This site isn’t just a portfolio. It’s a milestone. It proves I can
         think like a product designer, build like an engineer, and ship like a
         professional.
-      </Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText size="buttonText">
         It’s also a playground for my future ideas—an evolving showcase that’ll
         grow as I do.
-      </Text>
-      <Text size="buttonText">
+      </BodyText>
+      <BodyText size="buttonText">
         For recruiters and collaborators, this is my signal: I build clean. I
         build real. And I’m just getting started.
-      </Text>
-      <FlexContainer justifyContent="center" width="w-full">
+      </BodyText>
+      <FlexContainer justify="center" width="full">
         <Button href="/case-studies">Back to Case Studies</Button>
       </FlexContainer>
-    </Main>
+    </MainContainer>
   );
 }

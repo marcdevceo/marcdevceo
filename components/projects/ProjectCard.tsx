@@ -1,18 +1,15 @@
 import Image from "next/image";
-import Card from "@/components/ui/Card";
-import { Subtitle, Text } from "@/components/ui/Typography";
-import SpacerX, { Container, FlexContainer } from "../ui/Spacer";
-import Button from "@/components/ui/Button";
 import { projectslist } from "@/data/projectslist";
+import { BlockContainer, BodyText, Button, Card, FlexContainer, Subtitle } from "@/ui-framework";
 
 export default function ProjectCard() {
   return (
-    <FlexContainer flex="primary" gap="xxl" alignItems="stretch">
+    <FlexContainer flexDirection="primary" gap="2xl" alignItems="stretch">
       {projectslist.map((project) => (
-        <Container key={project.title} className="flex-1">
+        <BlockContainer key={project.title} className="flex-1">
           <Card className="flex flex-col gap-4 justify-between">
             <Subtitle align="center">{project.title}</Subtitle>
-            <Container className="flex justify-center">
+            <BlockContainer className="flex justify-center">
               <Image
                 src={project.img}
                 alt={`${project.title} screenshot`}
@@ -20,15 +17,13 @@ export default function ProjectCard() {
                 height={200}
                 className="object-cover h-[200px] overflow-hidden"
               />
-            </Container>
-            <Text size="caption">{project.description}</Text>
-            <Text size="caption" weight="bold">
+            </BlockContainer>
+            <BodyText size="caption">{project.description}</BodyText>
+            <BodyText size="caption" weight="bold">
               Tech Stack:
-              <SpacerX className="font-light italic">
                 {project.techStack}
-              </SpacerX>
-            </Text>
-            <FlexContainer justifyContent="center" width="w-full" gap="md">
+            </BodyText>
+            <FlexContainer justify="center" width="full" gap="md">
               <Button href={project.liveUrl} target="_blank">
                 Visit the Site
               </Button>
@@ -37,7 +32,7 @@ export default function ProjectCard() {
               </Button>
             </FlexContainer>
           </Card>
-        </Container>
+        </BlockContainer>
       ))}
     </FlexContainer>
   );
