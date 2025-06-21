@@ -1,107 +1,114 @@
 /* Base Font Tokens */
 
 .font-inter {
-  font-family: var(--font-inter), sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
 .font-poppins {
-  font-family: var(--font-poppins), sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
 
 .font-poppins-bold {
-  font-family: var(--font-poppins), sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 700;
 }
 
 .font-outfit {
-  font-family: var(--font-outfit), sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
 .font-rubik {
-  font-family: var(--font-rubik), sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
 }
 
 .font-workSans {
-  font-family: var(--font-workSans), sans-serif;
+  font-family: 'Work Sans', sans-serif;
   font-weight: 400;
 }
 
 .font-playfair {
-  font-family: var(--font-playfair), serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
 }
 
 .font-merriweather {
-  font-family: var(--font-merriweather), serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 400;
 }
 
 .font-merriweather-bold {
-  font-family: var(--font-merriweather), serif;
+  font-family: 'Playfair Display', serif;
   font-weight: 700;
 }
 
 .font-greatVibes {
-  font-family: var(--font-greatVibes), cursive;
+  font-family: 'Great Vibes', cursive;
   font-weight: 400;
 }
 
 .font-lobster {
-  font-family: var(--font-lobster), cursive;
+  font-family: 'Hanalei', cursive;
   font-weight: 400;
 }
 
 /* Design Token Aliases */
 
+/* Design Token Aliases - Disabled for build without Tailwind utilities
 .font-body {
-  @apply font-inter;
+  font-family: var(--font-inter), sans-serif;
 }
 
 .font-heading {
-  @apply font-playfair;
+  font-family: var(--font-playfair), serif;
 }
 
 .font-casual {
-  @apply font-poppins;
+  font-family: var(--font-poppins), sans-serif;
 }
 
 .font-bold {
-  @apply font-lobster;
+  font-family: var(--font-lobster), cursive;
 }
 
 .font-script {
-  @apply font-greatVibes;
+  font-family: var(--font-greatVibes), cursive;
 }
 
 .font-festive {
-  @apply font-pacifico;
+  font-family: var(--font-pacifico), cursive;
 }
 
 .font-display {
-  @apply font-playfair;
+  font-family: var(--font-playfair), serif;
 }
 
 .font-sans {
-  @apply font-inter;
+  font-family: var(--font-inter), sans-serif;
 }
+*/
 
 /* Pre-Styled Marketing Combos */
 
+/*
 .font-promo {
-  @apply font-display text-xl;
+  font-family: var(--font-playfair, serif);
+  font-size: 1.25rem;
 }
 
 .font-seasonal {
-  @apply font-festive text-2xl;
+  font-family: var(--font-pacifico, cursive);
+  font-size: 1.5rem;
 }
 
 .font-hero-cursive {
-  @apply font-script text-4xl;
+  font-family: var(--font-greatVibes, cursive);
+  font-size: 2.25rem;
 }
+*/
 
 @keyframes scroll-left {
   0% {
