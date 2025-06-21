@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "../ui-framework/styles/fonts.css";
+@import "../ui-framework/theme/globals.css";
 
 /* :root {
   --background: #ffffff;
